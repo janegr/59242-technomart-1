@@ -4,7 +4,7 @@ body {
 	font-weight: 400;
 	font-family: "PT Sans", Arial, Helvetica, sans-serif;
 	color: #000000;
-} 
+}
 
 .header-title {
 	font-size: 16px;
@@ -16,19 +16,10 @@ body {
 	color: #ee3643;
 }
 
-.section-header { 
+.section-header {
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
 	font-family: Cuprum, Arial, Verdana, sans-serif;
 	color: #32425c;
-}
-
-.slide-name {
-	font-size: 36px;
-	line-height: 30px;
-	
-	font-weight: 700;
-	font-family: Cuprum, Arial, Verdana, sans-serif;
-	color: #ffffff;
 }
