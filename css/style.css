@@ -23,3 +23,11 @@ body {
 	font-family: Cuprum, Arial, Verdana, sans-serif;
 	color: #32425c;
 }
+.nav-link {
+font-size: 17px;
+	line-height: 17px;
+	color: rgba(255, 255, 255, 1);
+	font-weight: 400;
+	font-style: normal;
+	font-family: Cuprum, Arial, Verdana, sans-serif; 
+}
