@@ -4,17 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог товаров - интернет магазин Техномарт</title>
-	<!-- <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/normalize.css">-->
+	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/style.css" type="text/css" rel="stylesheet"></head>
 <body>
 	<header class="main-header header-catalog">
 		<div class="header-top">
 			<div class="container clearfix">
-				<a class="header-logo" href="index.html" target="_blank">Техномарт</a>
+				<a class="logo" href="index.html" target="_blank">Техномарт</a>
 				<div class="header-search">
-					<form class="search-form" action="#" method="get">
+					<form  action="#" method="get">
 						<input type="search" id="search-operation" placeholder="Поиск:">
 						<label class="search-icon" for="search-operation"></label>
 					</form>
@@ -43,7 +43,7 @@
 					<div class="col col-4">
 						<div class="header-contacts">
 							<span class="phone-number">+7 (812) 555-05-55</span>
-							<p class="header-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+							<p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						</div>
 					</div>
 					<div class="col col-4">
@@ -115,7 +115,7 @@
 							<span class="filter-form-name">Фильтр</span>
 							<form action="#" class="filter-form" method="post">
 								<fieldset class="filter-price">
-									<legend class="filter-name">Цена</legend>
+									<legend class="filter-name">Цена:</legend>
 									<div class="filter-block">
 										<div class="range-controls">
 											<div class="scale">
@@ -196,6 +196,18 @@
 								</ul>
 							</div>
 							<div class="goods-gallery">
+
+							<div class="modal-basket">
+										<button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+										<div class="modal-basket-container"> <b class="modal-basket-name">Товар добавлен в корзину</b>
+									</div>
+									<div class="modal-bottom modal-bottom-basket">
+										<!--  <a class="btn basket-btn" href="#">Оформить заказ</a>
+										<a class="btn basket-btn-continue" href="#">Продолжить покупки</a>-->
+										<input type="submit" value="Оформить заказ">
+										<input type="reset" value="Продолжить покупки">
+									</div>
+									</div>
 						
 								<div class="row row--inline">
 									<div class="col col-4">
@@ -484,14 +496,14 @@
 					</div>
 					<div class="col col-4">
 						<div class="footer-info">
-							<span class="info-name">Обратная связь:</span>
+							<span class="footer-info-name">Обратная связь:</span>
 							<br>
-							<a class="info-link" href="mailto:mail@htmlacademy.ru" target="_blank">mail@htmlacademy.ru</a>
+							<a class="footer-info-link" href="mailto:mail@htmlacademy.ru" target="_blank">mail@htmlacademy.ru</a>
 						</div>
 						<div class="footer-info">
-							<span class="info-name">Разработано &#8212;</span>
+							<span class="footer-info-name">Разработано &#8212;</span>
 							<br>
-							<a class="info-link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+							<a class="footer-info-link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
 						</div>
 					</div>
 				</div>
