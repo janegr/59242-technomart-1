@@ -144,7 +144,7 @@ body {
 .logo {
 	display: inline-block;
 	width: 220px;
-	padding: 10px;
+	padding: 10px 10px 13px;
 	font-size: 24px;
 	line-height: 24px;
 	font-weight: 700;
@@ -884,7 +884,7 @@ input[type="search"]:focus ~ label {
 
 #btn-2:checked ~ .slider-inner .slider-slides .slide-2 { 
    transform: translate(-620px);
- }
+}
 
 #btn-3:checked ~ .slider-inner .slider-slides .slide-1 { 
    transform: translate(0px);
@@ -1217,8 +1217,6 @@ input[type="search"]:focus ~ label {
 
 .goods-gallery {
 	margin-bottom: 26px;
-/*	font-size: 0;
-	vertical-align: top;*/
 	z-index: 1;
 }
 
@@ -1233,7 +1231,6 @@ input[type="search"]:focus ~ label {
 .goods-gallery .goods-price {
 	font-size: 17px;
 }
-
 
 .brand-name {
 	margin-bottom: 20px;
@@ -2313,32 +2310,74 @@ input[type="submit"] {
 	margin-right: 0;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
+
 
 .modal-content {
 	position: absolute;
@@ -2363,7 +2402,7 @@ input[type="submit"] {
 
 .modal-content-feedback {
   position: fixed;
-	top: 92px;
+	top: 15%;
 	left: 50%;
 	padding: 48px 80px 38px;
 	display: none;
@@ -2371,7 +2410,7 @@ input[type="submit"] {
 
 .modal-content-basket {
   position: fixed;
-	top: 92px;
+	top: 15%;
 	left: 50%;
 	padding: 38px 80px 38px;
 	display: none;
@@ -2379,12 +2418,12 @@ input[type="submit"] {
 
 .modal-content-show {
   display: block;
-  animation: bounce 0.6s;
+  animation: bounce .9s;
 }
 
 
 .modal-error {
-  animation: shake 0.3s;
+  animation: shake .3s;
 }
 
 .modal-close {
@@ -2572,7 +2611,7 @@ input[type="submit"] {
 }
 
 .modal-content-map {
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	display: none;
@@ -2587,3 +2626,35 @@ input[type="submit"] {
 	box-shadow: 0 0 16px 0 rgba(35, 31, 32, 0.5);
 	z-index: 100;
 }
+
+.modal-content-map-show {
+  display: block;
+}
+
+.modal-map-close {
+	position: absolute;
+	top: 10px;
+	right: 9px;
+	width: 21px;
+  height: 21px;
+ 	font-size: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  
+}
+
+.modal-map-close::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	width: 21px;
+  height: 21px;
+  background-position: -10px -967px;
+  pointer-events: none;
+  z-index: 110;
+}	

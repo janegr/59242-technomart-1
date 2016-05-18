@@ -1,8 +1,8 @@
-var linkFeedback = document.querySelector(".map-btn");
+  var linkFeedback = document.querySelector(".map-btn");
 
-var popupFeedback = document.querySelector(".modal-content-feedback");
+  var popupFeedback = document.querySelector(".modal-content-feedback");
 
-if (popupFeedback) {
+  if (popupFeedback) {
   var closeFeedback = popupFeedback.querySelector(".modal-close");
 
   var formFeedback = popupFeedback.querySelector(".modal-form-feedback");
@@ -14,19 +14,21 @@ if (popupFeedback) {
   var formletter = popupFeedback.querySelector("[name=form-letter]");
 
   var userStorage = localStorage.getItem("user");
+
   var emailStorage = localStorage.getItem("email");
 
   linkFeedback.addEventListener("click", function(event) {
-    event.preventDefault();
-    popupFeedback.classList.add("modal-content-show");
+  event.preventDefault();
+  popupFeedback.classList.add("modal-content-show");
 
-    if (userStorage) {
-      user.value = userStorage;
-      if (emailStorage) {
-        email.value = emailStorage;
-        formletter.focus();
-      }
-      else {
+  if (userStorage) {
+  user.value = userStorage;
+  if (emailStorage) {
+  email.value = emailStorage;
+  formletter.focus();
+  }
+
+ else {
         email.focus();
       }
     }
@@ -42,7 +44,7 @@ if (popupFeedback) {
   });
 
   formFeedback.addEventListener("submit", function(event) {
-    if (!user.value || !email.value || !formletter.value) {
+   if (!user.value || !email.value || !formletter.value) {
       event.preventDefault();
       popupFeedback.classList.remove("modal-error");
       popupFeedback.offsetWidth = popupFeedback.offsetWidth;
@@ -52,8 +54,8 @@ if (popupFeedback) {
         localStorage.setItem("user", user.value
           );            
       }
-      if (email.value) {
-        localStorage.setItem("email", email.value
+    if (email.value) {
+      localStorage.setItem("email", email.value
           );
       }
     } 
@@ -70,31 +72,27 @@ if (popupFeedback) {
 }
 
 
+  var mapOpen = document.querySelector(".js-open-map");
 
+  var mapPopup = document.querySelector(".modal-content-map");
 
-
-
-var mapOpen = document.querySelector(".js-open-map");
-
-var mapPopup = document.querySelector(".modal-content-map");
-
-if (mapPopup) {
-  var mapClose = mapPopup.querySelector(".modal-close");
+  if (mapPopup) {
+  var mapClose = mapPopup.querySelector(".modal-map-close");
 
   mapOpen.addEventListener("click", function(event) {
     event.preventDefault();
-    mapPopup.classList.add("modal-content-show");
+    mapPopup.classList.add("modal-content-map-show");
   });
 
   mapClose.addEventListener("click", function(event) {
     event.preventDefault();
-    mapPopup.classList.remove("modal-content-show");
+    mapPopup.classList.remove("modal-content-map-show");
   });
 
   window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
-      if (mapPopup.classList.contains("modal-content-show")) {
-        mapPopup.classList.remove("modal-content-show");
+      if (mapPopup.classList.contains("modal-content-map-show")) {
+        mapPopup.classList.remove("modal-content-map-show");
       }
     }
   });
@@ -102,32 +100,11 @@ if (mapPopup) {
 
 
 
+  var buyButton = document.querySelectorAll(".active-buy");
 
+  var popupBasket = document.querySelector(".modal-content-basket");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var buyButton = document.querySelectorAll(".active-buy");
-
-var popupBasket = document.querySelector(".modal-content-basket");
-
-if (popupBasket) {
+  if (popupBasket) {
   var closeBasket = popupBasket.querySelector(".modal-close");
 
   var continueOrders = popupBasket.querySelector("[name=continue]");
