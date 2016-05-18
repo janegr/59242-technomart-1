@@ -1,5 +1,5 @@
 
-html {
+html { 
  box-sizing: border-box;
 }
 
@@ -116,7 +116,7 @@ img {
 
 body {
 	min-width: 960px;
-	margin: 0;
+	margin: 0 auto;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
@@ -144,7 +144,7 @@ body {
 .logo {
 	display: inline-block;
 	width: 220px;
-	padding: 10px 10px 13px;
+	padding: 10px;
 	font-size: 24px;
 	line-height: 24px;
 	font-weight: 700;
@@ -1019,7 +1019,7 @@ input[type="search"]:focus ~ label {
 	position: relative;
 	display: block;
 	width: 220px;
-	height: 318px;
+	min-height: 320px;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	background-color: #ffffff;
@@ -1038,8 +1038,8 @@ input[type="search"]:focus ~ label {
 .ribbon-new::before {
 	position: absolute;
 	content: "";
-	top: 0;
-	right: 0;
+	top: -1px;
+	right: -1px;
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	width: 60px;
@@ -1137,15 +1137,15 @@ input[type="search"]:focus ~ label {
 .goods-view {
 	display: block;
 	max-width: 218px;
-	max-height: 159px;
-	margin: 0  auto 20px;
+	height: 159px;
+	margin: 0  auto 19px;
 	overflow: hidden;
 	z-index: 10;
 }
 
 .goods-name {
 	width: 100%;
-	margin-top: 0;
+	min-height: 40px;
 	margin: 0 auto 12px;
 	padding: 0;
 	font-size: 18px;
@@ -1172,7 +1172,8 @@ input[type="search"]:focus ~ label {
 .price-old {
 	display: block;
 	width: 100%;
-	min-height: 28px;
+	min-height: 18px;
+	margin-bottom: 10px;
   padding-bottom: 0;
 	font-size: 17px;
 	line-height: 18px;
@@ -1186,7 +1187,8 @@ input[type="search"]:focus ~ label {
 	position: relative;
 	display: block;
 	width: 140px;
-	min-height: 38px;
+	height: 38px;
+	padding: 10px;
   margin: 0 auto;
 	font-size: 17px;
 	line-height: 18px;
@@ -1214,9 +1216,9 @@ input[type="search"]:focus ~ label {
 }
 
 .goods-gallery {
-	margin-bottom: 20px;
-	font-size: 0;
-	vertical-align: top;
+	margin-bottom: 26px;
+/*	font-size: 0;
+	vertical-align: top;*/
 	z-index: 1;
 }
 
@@ -1260,7 +1262,7 @@ input[type="search"]:focus ~ label {
 
 .service-name {
 	margin: 0;
-	padding: 70px 0 28px;
+	padding: 68px 0 28px;
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: 400;
@@ -1335,7 +1337,7 @@ input[type="search"]:focus ~ label {
 .tab-content {
   position: absolute;
   top: 0;
-  left: 320px;
+  left: 240px;
   width: 700px;
   height: 282px;
 	display: none;
@@ -1346,25 +1348,25 @@ input[type="search"]:focus ~ label {
 .tab-delivery {
 	background-image: url("../img/decor-delivery.png");
 	background-repeat: no-repeat;
-	background-position: 152px 25px;
+	background-position: right 0 bottom -4px;
 }	
 
 .tab-garant {
 	background-image: url("../img/decor-garant.png");
 	background-repeat: no-repeat;
-	background-position: right 17px bottom 0;
+	background-position: right 0 bottom -4px;
 }
 
 .tab-credit {
 	background-image: url("../img/decor-kredit.png");
 	background-repeat: no-repeat;
-	background-position: right 34px bottom 0;
+	background-position: right 0 bottom 0;
 }
 
 .tab-content-name {
 	display: block;
 	width: 376px;
-	margin: 6px 0 32px;
+	margin: 6px 0 32px 80px;
 	padding-right: 10px;
 	font-size: 36px;
 	line-height: 24px;
@@ -1377,8 +1379,8 @@ input[type="search"]:focus ~ label {
 
 .tab-content-text {
 	width: 384px;
-	margin: 0;
-	padding-right: 10px; 
+	margin: 0 0 0 80px;
+	padding: 0 10px 0 0;
 }
 
 .tab-content-text:last-child {
@@ -1388,12 +1390,12 @@ input[type="search"]:focus ~ label {
 .credit-btn {
 	display: block;
 	width: 200px;	
-	margin-top: 30px;
+	margin: 30px 0 0 80px;
 	text-align: center;
 }
 
 .company-content {
-	min-height: 537px;
+	min-height: 535px;
 }
 
 .content-title {
@@ -1409,7 +1411,7 @@ input[type="search"]:focus ~ label {
 
 .content-info {
 	margin: 0;
-	padding: 0 10px 23px 0;
+	padding: 0 10px 22px 0;
 }
 
 .content-info:nth-child(3) {
@@ -1448,7 +1450,7 @@ input[type="search"]:focus ~ label {
 .info-btn {
 	display: block;
 	width: 220px;	
-	margin: 38px 24px 85px 0; 
+	margin: 38px 24px 84px 0; 
 }
 
 .map-info {
@@ -1464,7 +1466,7 @@ input[type="search"]:focus ~ label {
 .map-btn {
 	display: block;
 	width: 300px;	
-	margin: 41px 24px 85px 0; 
+	margin: 41px 24px 84px 0; 
 }
 
 
@@ -1620,6 +1622,12 @@ input[type="search"]:focus ~ label {
 .max-toggle {
 	left: 158px;
 }
+
+.bar {
+	margin-left: 0;
+	width:140px;
+}
+
 
 .price-controls {
 	position: relative;
@@ -2006,7 +2014,7 @@ input[type="submit"] {
 } 
 
 .panagination {
-	margin: 32px 0 60px;
+	margin: 0 0 60px;
 	padding: 0;
 	font-size: 0;
 	list-style: none;
@@ -2056,7 +2064,7 @@ input[type="submit"] {
 	padding: 10px 30px;
 	font-size: 13px;
 	line-height: 18px;
-	font-weight: 400;*/
+	font-weight: 400;
 	font-family: "PT Sans", Arial, Helvetica, sans-serif;
 	color: #000000;
 	text-decoration: none;
@@ -2305,10 +2313,36 @@ input[type="submit"] {
 	margin-right: 0;
 }
 
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-content {
 	position: absolute;
 	width: 620px;
-	/*display: none;*/
 	margin-left: -310px;
 	background-color: #ffffff;
 	border-top: 7px solid #ee3643;
@@ -2328,15 +2362,29 @@ input[type="submit"] {
 }
 
 .modal-content-feedback {
-	top: 206px;
+  position: fixed;
+	top: 92px;
 	left: 50%;
 	padding: 48px 80px 38px;
+	display: none;
 }
 
 .modal-content-basket {
+  position: fixed;
 	top: 92px;
 	left: 50%;
 	padding: 38px 80px 38px;
+	display: none;
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+
+.modal-error {
+  animation: shake 0.3s;
 }
 
 .modal-close {
@@ -2442,6 +2490,7 @@ input[type="submit"] {
 	background: #ee3643;
 	border: none; 
 	outline: none;
+	cursor: pointer;
 	z-index: 200;
 }
 

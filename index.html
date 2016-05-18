@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
@@ -298,55 +298,59 @@
 		</div>
 		<div class="service">
 			<div class="container">
-				<div class="service-description">
-					<h2 class="service-name">Сервисы</h2>
-					<p>
-						Хороший интернет-магазин отличается от плохого не только ценами
-					</p>
-					<p>
-						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-					</p>
-				</div>
-				<ul class="tab-menu">
-					<li class="tab-item">
-						<input type="radio" checked name="tabs" id="tab1">
-						<label for="tab1">Доставка</label>
-						<div id="tab-body1" class="tab-content tab-delivery">
-							<b class="tab-content-name">Доставка</b>
-							<p class="tab-content-text">
-								Мы с удовольствием доставим ваш товар прямо
-								<br>к вашему подъезду совершенно бесплатно!</p>
-							<p class="tab-content-text">
-								Ведь мы неплохо заработаем,
-								<br>поднимая его на ваш на этаж!</p>
+				<div class="row">
+					<div class="col col-12">
+						<div class="service-description">
+							<h2 class="service-name">Сервисы</h2>
+							<p>
+								Хороший интернет-магазин отличается от плохого не только ценами
+							</p>
+							<p>
+								Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+							</p>
 						</div>
-					</li>
-					<li class="tab-item">
-						<input type="radio" name="tabs" id="tab2">
-						<label for="tab2">Гарантия</label>
-						<div id="tab-body2" class="tab-content tab-garant">
-							<b class="tab-content-name">Гарантия</b>
-							<p class="tab-content-text">
-								Если купленный у нас товар поломается или заискрит,
-								<br>
-								а также в случае пожара, спровоцированного его возгоранием,
+						<ul class="tab-menu">
+							<li class="tab-item">
+								<input type="radio" checked name="tabs" id="tab1">
+								<label for="tab1">Доставка</label>
+								<div id="tab-body1" class="tab-content tab-delivery">
+									<b class="tab-content-name">Доставка</b>
+									<p class="tab-content-text">
+										Мы с удовольствием доставим ваш товар прямо
+										<br>к вашему подъезду совершенно бесплатно!</p>
+									<p class="tab-content-text">
+										Ведь мы неплохо заработаем,
+										<br>поднимая его на ваш на этаж!</p>
+								</div>
+							</li>
+							<li class="tab-item">
+								<input type="radio" name="tabs" id="tab2">
+								<label for="tab2">Гарантия</label>
+								<div id="tab-body2" class="tab-content tab-garant">
+									<b class="tab-content-name">Гарантия</b>
+									<p class="tab-content-text">
+										Если купленный у нас товар поломается или заискрит,
+										<br>
+										а также в случае пожара, спровоцированного его возгоранием,
 								вы всегда можете быть уверены в нашей гарантии. Мы обменяем
 								сгоревший товар на новый.
-							</p>
-							<p class="tab-content-text">Дом уж восстановите как-нибудь сами.</p>
-						</div>
-					</li>
-					<li class="tab-item">
-						<input type="radio" name="tabs" id="tab3">
-						<label for="tab3">Кредит</label>
-						<div id="tab-body3" class="tab-content tab-credit">
-							<b class="tab-content-name">Кредит</b>
-							<p class="tab-content-text">Залезть в долговую яму стало проще!</p>
-							<p class="tab-content-text">Кредитные консультанты придут вам на помощь.</p>
-							<a href="#" class="btn credit-btn" target="_blank">Отправить заявку</a>
-						</div>
-					</li>
-				</ul>
+									</p>
+									<p class="tab-content-text">Дом уж восстановите как-нибудь сами.</p>
+								</div>
+							</li>
+							<li class="tab-item">
+								<input type="radio" name="tabs" id="tab3">
+								<label for="tab3">Кредит</label>
+								<div id="tab-body3" class="tab-content tab-credit">
+									<b class="tab-content-name">Кредит</b>
+									<p class="tab-content-text">Залезть в долговую яму стало проще!</p>
+									<p class="tab-content-text">Кредитные консультанты придут вам на помощь.</p>
+									<a href="#" class="btn credit-btn" target="_blank">Отправить заявку</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="container">
@@ -376,21 +380,21 @@
 							Вы можете забрать товар сами,
 							<br>заехав в наш офис:</p>
 						<div class="map-info">
-							<a href="https://yandex.ru/maps/-/CVHUvZ67" class="map-link" target="_blank">
+							<a href="#" class="map-link js-open-map" target="_blank">
 								<img src="img/img-map.jpg" width="300" height="158" alt="Карта"></a>
 						</div>
 						<a href="#" class="btn map-btn" target="_blank">Заблудились? Напишите нам!</a>
 					</div>
 				</div>
-				<div class="modal-content  modal-content-feedback">
+				<div class="modal-content modal-content-feedback">
 					<button class="modal-close" type="button" title="Закрыть">Закрыть</button>
 					<form class="modal-form-feedback" action="#" method="get">
 						<label  for="name-user">
 							Ваше имя
-							<input type="text" name="data-name" id="name-user"  placeholder="Представтесь, пожалуйста"></label>
-						<label for="e-mail">
+							<input type="text" name="user" id="name-user"  placeholder="Представтесь, пожалуйста"></label>
+						<label for="mail">
 							Ваш e-mail
-							<input type="email" name="data-e-mail" id="e-mail" placeholder="Для отправки ответа"></label>
+							<input type="email" name="e-mail" id="mail" placeholder="Для отправки ответа"></label>
 						<label for="letter">
 							Текст письма
 							<textarea  rows="5" name="form-letter" id="letter" placeholder="В свободной форме"></textarea>
@@ -399,7 +403,7 @@
 				</div>
 				<div class="modal-content-map">
 					<button class="modal-close" type="button" title="Закрыть">Закрыть</button>
-					<div id="yandex-map"></div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -487,6 +491,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer>	
+	<script src="./js/script.js"></script>
 </body>
 </html>
